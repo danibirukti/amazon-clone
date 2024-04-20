@@ -1,0 +1,324 @@
+[debug] [2024-04-18T11:06:32.936Z] ----------------------------------------------------------------------
+[debug] [2024-04-18T11:06:32.945Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\danie\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-04-18T11:06:32.946Z] CLI Version:   13.7.2
+[debug] [2024-04-18T11:06:32.947Z] Platform:      win32
+[debug] [2024-04-18T11:06:32.948Z] Node Version:  v20.11.1
+[debug] [2024-04-18T11:06:32.948Z] Time:          Thu Apr 18 2024 13:06:32 GMT+0200 (Central European Summer Time)
+[debug] [2024-04-18T11:06:32.949Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-18T11:06:32.957Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-04-18T11:06:33.459Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-18T11:06:33.460Z] > authorizing via signed-in user (danielbiruktawit18@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-04-18T11:06:33.498Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-18T11:06:33.500Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-04-18T11:06:33.527Z] [hub] writing locator at C:\Users\danie\AppData\Local\Temp\hub-clone-531b0.json
+[debug] [2024-04-18T11:06:33.589Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-18T11:06:33.589Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-18T11:06:33.590Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2024-04-18T11:06:33.603Z] defaultcredentials: writing to file C:\Users\danie\AppData\Roaming\firebase\danielbiruktawit18_gmail_com_application_default_credentials.json
+[debug] [2024-04-18T11:06:33.621Z] Setting GAC to C:\Users\danie\AppData\Roaming\firebase\danielbiruktawit18_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\danie\\AppData\\Roaming\\firebase\\danielbiruktawit18_gmail_com_application_default_credentials.json"}}
+[debug] [2024-04-18T11:06:33.629Z] > refreshing access token with scopes: []
+[debug] [2024-04-18T11:06:33.633Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-04-18T11:06:33.634Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-18T11:06:33.968Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-04-18T11:06:33.969Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-18T11:06:33.982Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-531b0/adminSdkConfig [none]
+[debug] [2024-04-18T11:06:33.988Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-04-18T11:06:33.988Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-04-18T11:06:34.467Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-531b0/adminSdkConfig 200
+[debug] [2024-04-18T11:06:34.467Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-531b0/adminSdkConfig {"projectId":"clone-531b0","storageBucket":"clone-531b0.appspot.com"}
+[debug] [2024-04-18T11:06:34.502Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-04-18T11:06:34.503Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-04-18T11:06:34.503Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\danie\\.cache\\firebase\\emulators\\ui-v1.11.8\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\danie\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.8\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-04-18T11:06:35.031Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-04-18T11:06:35.032Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\danie\\OneDrive\\Desktop\\evangadi\\amazone-clone\\functions\" for Cloud Functions..."}}
+[debug] [2024-04-18T11:06:35.077Z] Validating nodejs source
+[debug] [2024-04-18T11:06:39.078Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^15.2.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-04-18T11:06:39.079Z] Building nodejs source
+[debug] [2024-04-18T11:06:39.079Z] Failed to find version of module node: reached end of search path C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-04-18T11:06:39.090Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-18T11:06:39.110Z] Found firebase-functions binary at 'C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8351
+
+[debug] [2024-04-18T11:06:41.009Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/clone-531b0/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clone-531b0/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-04-18T11:07:22.505Z] [work-queue] {"queuedWork":["/clone-531b0/us-central1/api).-2024-04-18T11:07:22.504Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-18T11:07:22.507Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-531b0/us-central1/api).-2024-04-18T11:07:22.504Z"],"workRunningCount":1}
+[debug] [2024-04-18T11:07:22.513Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-18T11:07:22.616Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2024-04-18T11:07:35.197Z] [work-queue] {"queuedWork":["/clone-531b0/us-central1/api)-2024-04-18T11:07:35.197Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-18T11:07:35.197Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-531b0/us-central1/api)-2024-04-18T11:07:35.197Z"],"workRunningCount":1}
+[debug] [2024-04-18T11:07:35.199Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-18T11:08:01.175Z] [work-queue] {"queuedWork":["/clone-531b0/us-central1/api-2024-04-18T11:08:01.175Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-18T11:08:01.176Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-531b0/us-central1/api-2024-04-18T11:08:01.175Z"],"workRunningCount":1}
+[debug] [2024-04-18T11:08:01.176Z] Accepted request GET /clone-531b0/us-central1/api --> us-central1-api
+[debug] [2024-04-18T11:08:01.185Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-18T11:08:01.187Z] [functions] Got req.url=/clone-531b0/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-531b0/us-central1/api, mapping to path=/"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-04-18T11:08:01.214Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2024-04-18T11:08:01.216Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2024-04-18T11:08:03.977Z] [runtime-status] [9508] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\danie\\OneDrive\\Desktop\\evangadi\\amazone-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9508] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\danie\\\\OneDrive\\\\Desktop\\\\evangadi\\\\amazone-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-04-18T11:08:03.980Z] [runtime-status] [9508] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\danie\\OneDrive\\Desktop\\evangadi\\amazone-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9508] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\danie\\\\OneDrive\\\\Desktop\\\\evangadi\\\\amazone-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-04-18T11:08:03.981Z] [runtime-status] [9508] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9508] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-04-18T11:08:03.983Z] [runtime-status] [9508] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\danie\\OneDrive\\Desktop\\evangadi\\amazone-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9508] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\danie\\\\OneDrive\\\\Desktop\\\\evangadi\\\\amazone-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-04-18T11:08:04.655Z] [runtime-status] [9508] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9508] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-04-18T11:08:04.655Z] [runtime-status] [9508] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\danie\\OneDrive\\Desktop\\evangadi\\amazone-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9508] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\danie\\\\OneDrive\\\\Desktop\\\\evangadi\\\\amazone-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-04-18T11:08:04.657Z] [runtime-status] [9508] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\danie\\OneDrive\\Desktop\\evangadi\\amazone-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9508] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\danie\\\\OneDrive\\\\Desktop\\\\evangadi\\\\amazone-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-04-18T11:08:04.660Z] [runtime-status] [9508] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\danie\\OneDrive\\Desktop\\evangadi\\amazone-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9508] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\danie\\\\OneDrive\\\\Desktop\\\\evangadi\\\\amazone-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-04-18T11:08:04.667Z] [runtime-status] [9508] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\danie\\OneDrive\\Desktop\\evangadi\\amazone-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9508] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\danie\\\\OneDrive\\\\Desktop\\\\evangadi\\\\amazone-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-04-18T11:08:04.668Z] [runtime-status] [9508] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\danie\\OneDrive\\Desktop\\evangadi\\amazone-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9508] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\danie\\\\OneDrive\\\\Desktop\\\\evangadi\\\\amazone-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-04-18T11:08:05.132Z] [runtime-status] [9508] Functions runtime initialized. {"cwd":"C:\\Users\\danie\\OneDrive\\Desktop\\evangadi\\amazone-clone\\functions","node_version":"20.11.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9508] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\danie\\\\OneDrive\\\\Desktop\\\\evangadi\\\\amazone-clone\\\\functions\",\"node_version\":\"20.11.1\"}"}}
+[debug] [2024-04-18T11:08:05.133Z] [runtime-status] [9508] Listening to port: \\?\pipe\fire_emu_36ac4325da1155c3 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9508] Listening to port: \\\\?\\pipe\\fire_emu_36ac4325da1155c3"}}
+[debug] [2024-04-18T11:08:05.146Z] [worker-us-central1-api-3ae75580-fa94-4fd5-bb19-9d7e39e145a5]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-3ae75580-fa94-4fd5-bb19-9d7e39e145a5]: IDLE"}}
+[debug] [2024-04-18T11:08:05.147Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-04-18T11:08:05.148Z] [worker-us-central1-api-3ae75580-fa94-4fd5-bb19-9d7e39e145a5]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-3ae75580-fa94-4fd5-bb19-9d7e39e145a5]: BUSY"}}
+[debug] [2024-04-18T11:08:05.161Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 13.5486ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 13.5486ms"}}
+[debug] [2024-04-18T11:08:05.162Z] [worker-us-central1-api-3ae75580-fa94-4fd5-bb19-9d7e39e145a5]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-3ae75580-fa94-4fd5-bb19-9d7e39e145a5]: IDLE"}}
+[debug] [2024-04-18T11:08:05.163Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-18T11:08:05.163Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-18T11:08:05.164Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-18T12:09:10.140Z] File C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\danie\\OneDrive\\Desktop\\evangadi\\amazone-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-04-18T12:09:11.161Z] Validating nodejs source
+[debug] [2024-04-18T12:09:15.390Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^15.2.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-04-18T12:09:15.391Z] Building nodejs source
+[debug] [2024-04-18T12:09:15.391Z] Failed to find version of module node: reached end of search path C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-04-18T12:09:15.395Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-18T12:09:15.411Z] Found firebase-functions binary at 'C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-04-18T12:09:15.470Z] File C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\danie\\OneDrive\\Desktop\\evangadi\\amazone-clone\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8559
+
+[error] C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\index.js:25
+    const total = parse req.query.total;
+                        ^^^
+
+SyntaxError: Unexpected identifier 'req'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-04-18T12:09:16.039Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected identifier 'req'
+[debug] [2024-04-18T12:09:16.477Z] Validating nodejs source
+[debug] [2024-04-18T12:09:19.918Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^15.2.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-04-18T12:09:19.918Z] Building nodejs source
+[debug] [2024-04-18T12:09:19.919Z] Failed to find version of module node: reached end of search path C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-04-18T12:09:19.926Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-18T12:09:19.940Z] Found firebase-functions binary at 'C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-04-18T12:09:19.952Z] File C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\danie\\OneDrive\\Desktop\\evangadi\\amazone-clone\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8905
+
+[error] C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\index.js:25
+    const total = parseInt req.query.total;
+                           ^^^
+
+SyntaxError: Unexpected identifier 'req'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-04-18T12:09:20.787Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected identifier 'req'
+[debug] [2024-04-18T12:09:20.960Z] Validating nodejs source
+[debug] [2024-04-18T12:09:23.967Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^15.2.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-04-18T12:09:23.968Z] Building nodejs source
+[debug] [2024-04-18T12:09:23.968Z] Failed to find version of module node: reached end of search path C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-04-18T12:09:23.972Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-18T12:09:23.986Z] Found firebase-functions binary at 'C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-04-18T12:09:24.291Z] File C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\danie\\OneDrive\\Desktop\\evangadi\\amazone-clone\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8941
+
+[debug] [2024-04-18T12:09:25.306Z] Validating nodejs source
+[debug] [2024-04-18T12:09:29.590Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^15.2.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-04-18T12:09:29.590Z] Building nodejs source
+[debug] [2024-04-18T12:09:29.591Z] Failed to find version of module node: reached end of search path C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-04-18T12:09:29.603Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-18T12:09:29.620Z] Found firebase-functions binary at 'C:\Users\danie\OneDrive\Desktop\evangadi\amazone-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-04-18T12:09:29.643Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] Serving at port 8706
+
+[debug] [2024-04-18T12:09:31.211Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-04-18T12:09:34.710Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2024-04-18T12:09:34.710Z] [worker-us-central1-api-3ae75580-fa94-4fd5-bb19-9d7e39e145a5]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-3ae75580-fa94-4fd5-bb19-9d7e39e145a5]: FINISHING"}}
+[debug] [2024-04-18T12:09:34.747Z] [worker-us-central1-api-3ae75580-fa94-4fd5-bb19-9d7e39e145a5]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-3ae75580-fa94-4fd5-bb19-9d7e39e145a5]: exited"}}
+[debug] [2024-04-18T12:09:34.748Z] [worker-us-central1-api-3ae75580-fa94-4fd5-bb19-9d7e39e145a5]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-3ae75580-fa94-4fd5-bb19-9d7e39e145a5]: FINISHED"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
